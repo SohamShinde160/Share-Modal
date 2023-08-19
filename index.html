@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Share Modal - Soham</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="circle1"></div>
+    <div class="circle2"></div>
+
+    <div class="wrapper">
+      <div class="cardwrapper">
+        <div>
+          <img src="./assets/soham23.png" alt="" />
+        </div>
+
+        <div class="username">
+          <h2>Soham S Shinde</h2>
+        </div>
+
+        <div class="designation">
+          <h3>3rd Year Computer Engineering</h3>
+        </div>
+
+        <div class="btn-grp">
+          <button onclick="openmodal()" class="btnshare btncard">
+            <i class="fa-solid fa-share"></i>
+            <div>Share my Profile</div>
+          </button>
+
+          <button class="btnfollow btncard">Follow me</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ! Modal Component -->
+    <div class="modal">
+      <div class="modalhead">
+        <h1>Share my Profile</h1>
+        <div>
+          <i onclick="closemodal()" class="fa-solid fa-xmark close"></i>
+        </div>
+      </div>
+
+      <div>
+        <h2>Share Via</h2>
+
+        <div class="icon-cont">
+          <a href="#" class="icon" id="facebook">
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+          <a href="#" class="icon" id="whatsapp">
+            <i class="fa-brands fa-whatsapp"></i>
+          </a>
+          <a href="#" class="icon" id="instagram">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a href="#" class="icon" id="twitter">
+            <i class="fa-brands fa-x-twitter"></i>
+          </a>
+          <a href="#" class="icon" id="telegram">
+            <i class="fa-brands fa-telegram"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- overlay -->
+    <div class="overlay" onclick="closemodal()"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
