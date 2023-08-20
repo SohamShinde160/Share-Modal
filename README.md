@@ -15,4 +15,5 @@ Styling is done with the help of CSS.
 <br>
 
 Screenshot
+<br>
 ![screenshot](https://github.com/SohamShinde160/Share-Modal/assets/139739695/4847031b-694c-42f4-a646-eed94cffb117)
